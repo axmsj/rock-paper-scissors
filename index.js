@@ -61,17 +61,10 @@ function playRound(humanChoice, computerChoice) {
 
 // PlayGame Function
 function playGame() {
-  humanScore = 0;
-  computerScore = 0;
-  attempts = 0;
-
-  //Invokes Function
-  let humanSelection = getHumanChoice();
-  let computerSelection = getComputerChoice();
-
-  for (let i = 0; i <= 5; i++) {
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
+  for (let i = 1; i <= 5; i++) {
+    //Invokes Function
+    let humanSelection = getHumanChoice();
+    let computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
     console.log(`Your Score: ${humanScore} | Computer Score ${computerScore}`);
   }
@@ -80,7 +73,7 @@ function playGame() {
   if (humanScore > computerScore) {
     console.log('FINAL RESULT: YOU WIN!!!');
   } else {
-    console.log('FINAL RESULT: rocYOU LOSE');
+    console.log('FINAL RESULT: YOU LOSE');
   }
 }
 
