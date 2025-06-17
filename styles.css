@@ -1,0 +1,38 @@
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+i {
+  font-size: 30px;
+}
+
+#rockBtn {
+  transform: rotate(90deg);
+}
+
+#displayResults {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#resetBtn {
+}
